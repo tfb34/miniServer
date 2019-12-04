@@ -25,7 +25,7 @@ var productRouter = require("./routes/Products");
 app.use("/api",userRouter);
 app.use("/api",productRouter);
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'))
 
 
 // app.use("/users",Users);
