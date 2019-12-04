@@ -20,11 +20,11 @@ app.use(bodyParser.urlencoded({extended:false}));
 //import Routes
 var userRouter = require("./routes/Users");
 var productRouter = require("./routes/Products");
-var webRouter = require("./routes/web");
+
 //Define routes here
 app.use("/api",userRouter);
 app.use("/api",productRouter);
-app.use("", webRouter);
+
 
 
 // app.use("/users",Users);
