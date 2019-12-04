@@ -6,9 +6,8 @@ const Sequelize = require("sequelize");
 //     operatorsAliases: false
 // });
 
-
-const sequelize;
-
+var sequelize;
+ 
 if (process.env.DATABASE_URL) {
     // the application is executed on Heroku ... use the postgres database
     sequelize = new Sequelize(DATABASE_URL, {
